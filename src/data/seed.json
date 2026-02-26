@@ -1,0 +1,98 @@
+{
+  "company": {
+    "name": "PiNodeAI",
+    "tagline": "Accelerating eCommerce, Digital Transformation, and Product Engineering",
+    "description": "We are a global digital consulting organization focused on accelerating eCommerce, digital transformation, and product engineering initiatives.",
+    "contactInfo": {
+      "email": "hello@pinodeai.com",
+      "phone": "+1 (555) 123-4567",
+      "address": "123 Innovation Drive, Tech City, TC 12345",
+      "officeHours": "Monday - Friday: 9:00 AM - 6:00 PM EST"
+    },
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/company/pinodeai",
+      "twitter": "https://twitter.com/pinodeai",
+      "github": "https://github.com/pinodeai",
+      "facebook": "https://facebook.com/pinodeai"
+    }
+  },
+  "services": [
+    {
+      "id": "1",
+      "title": "Adobe Experience Manager (AEM) Services",
+      "slug": "adobe-experience-manager",
+      "description": "We help enterprises deliver personalized, content-driven digital experiences using Adobe Experience Manager. Our AEM solutions enable faster content delivery, improved personalization, and seamless omnichannel experiences.",
+      "shortDescription": "Personalized, content-driven digital experiences with Adobe Experience Manager.",
+      "icon": "Layers",
+      "benefits": ["AEM Sites & Assets implementation", "Custom component and template development", "AEM Cloud Service migration", "Headless AEM integrations", "Performance, security & scalability optimization"],
+      "process": [
+        { "step": 1, "title": "Discovery & Assessment", "description": "We analyze your content requirements and digital experience goals to design the optimal AEM solution." },
+        { "step": 2, "title": "Implementation & Development", "description": "Our team implements AEM Sites & Assets, develops custom components and templates tailored to your needs." },
+        { "step": 3, "title": "Migration & Integration", "description": "We migrate to AEM Cloud Service and integrate headless architectures for modern digital experiences." },
+        { "step": 4, "title": "Optimization & Support", "description": "We optimize performance, security, and scalability while providing ongoing support and enhancements." }
+      ],
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "WordPress Services",
+      "slug": "wordpress-services",
+      "description": "We build flexible, secure, and high-performing WordPress solutions tailored to your business goals. From marketing websites to content-rich platforms, our WordPress services ensure scalability and ease of management.",
+      "shortDescription": "Flexible, secure, and high-performing WordPress solutions for your business.",
+      "icon": "Globe",
+      "benefits": ["Custom WordPress development", "Headless WordPress architectures", "WooCommerce development", "Performance, SEO & security optimization", "Content migration & platform upgrades"],
+      "process": [
+        { "step": 1, "title": "Planning & Design", "description": "We assess your requirements and design a WordPress solution that aligns with your business objectives." },
+        { "step": 2, "title": "Development & Customization", "description": "Our team builds custom WordPress sites, headless architectures, and WooCommerce stores tailored to your needs." },
+        { "step": 3, "title": "Optimization & Migration", "description": "We optimize performance, SEO, and security, and handle content migration and platform upgrades seamlessly." },
+        { "step": 4, "title": "Launch & Maintenance", "description": "We launch your WordPress solution and provide ongoing maintenance, updates, and support." }
+      ],
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "Shopify & Shopify Plus Services",
+      "slug": "shopify-services",
+      "description": "We design and develop scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands. Our Shopify solutions are built to convert, scale, and support long-term business growth.",
+      "shortDescription": "Scalable Shopify and Shopify Plus commerce solutions for growing and enterprise brands.",
+      "icon": "ShoppingCart",
+      "benefits": ["Shopify & Shopify Plus store development", "Custom themes & storefronts", "Headless Shopify implementations", "App integrations & custom development", "Performance optimization & CRO"],
+      "process": [
+        { "step": 1, "title": "Strategy & Planning", "description": "We analyze your commerce goals and design a Shopify strategy that drives growth and conversions." },
+        { "step": 2, "title": "Development & Customization", "description": "Our team develops custom Shopify stores, themes, storefronts, and headless implementations." },
+        { "step": 3, "title": "Integration & Optimization", "description": "We integrate apps, develop custom solutions, and optimize performance and conversion rates." },
+        { "step": 4, "title": "Launch & Growth", "description": "We launch your Shopify store and provide ongoing support to ensure long-term business growth." }
+      ],
+      "featured": true
+    }
+  ],
+  "caseStudies": [
+    { "id": "1", "title": "AI-Powered Customer Service Platform", "slug": "ai-customer-service-platform", "description": "Developed an intelligent customer service platform using AI and NLP to automate support and improve response times.", "challenge": "The client needed to handle 10,000+ customer inquiries daily with limited support staff.", "solution": "We developed a custom AI chatbot integrated with their CRM system, capable of handling 80% of common inquiries automatically.", "results": ["80% reduction in response time", "60% cost savings on support operations", "95% customer satisfaction rate", "24/7 availability for customers"], "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800", "client": "TechCorp Inc.", "clientTestimonial": { "name": "Sarah Johnson", "role": "VP of Customer Experience", "quote": "PiNodeAI transformed our customer service operations. The AI platform handles most inquiries seamlessly, allowing our team to focus on complex issues." }, "technologies": ["Python", "TensorFlow", "React", "Node.js", "AWS"], "services": ["AI & Machine Learning Solutions", "Web & Mobile Development"], "category": "AI/ML", "featured": true },
+    { "id": "2", "title": "Cloud Migration for Enterprise", "slug": "enterprise-cloud-migration", "description": "Migrated a legacy enterprise system to AWS with zero downtime and improved performance.", "challenge": "A large enterprise was running critical applications on outdated on-premise infrastructure.", "solution": "We designed and executed a comprehensive cloud migration strategy, moving applications to AWS with containerization and CI/CD.", "results": ["Zero downtime during migration", "50% reduction in infrastructure costs", "3x improvement in application performance", "99.9% uptime achieved"], "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800", "client": "Global Finance Corp", "technologies": ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins"], "services": ["Cloud Infrastructure & DevOps"], "category": "Cloud/DevOps", "featured": true },
+    { "id": "3", "title": "E-Commerce Mobile App", "slug": "ecommerce-mobile-app", "description": "Built a native mobile e-commerce application with real-time inventory and payment integration.", "challenge": "A retail company needed a mobile app to compete in the digital marketplace.", "solution": "We developed a native iOS and Android app with product search, real-time inventory, secure payments, and order tracking.", "results": ["40% increase in mobile sales", "4.8-star app store rating", "30% improvement in conversion rate", "500K+ downloads in first 6 months"], "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800", "client": "Fashion Retail Co.", "technologies": ["React Native", "Node.js", "MongoDB", "Stripe API"], "services": ["Web & Mobile Development"], "category": "Mobile", "featured": true }
+  ],
+  "teamMembers": [
+    { "id": "1", "name": "Alex Chen", "role": "CEO & Founder", "bio": "Alex has over 15 years of experience in technology and entrepreneurship. He founded PiNodeAI with a vision to make AI accessible to businesses of all sizes.", "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400", "social": { "linkedin": "https://linkedin.com/in/alexchen", "twitter": "https://twitter.com/alexchen" } },
+    { "id": "2", "name": "Sarah Martinez", "role": "CTO", "bio": "Sarah is a technology leader with expertise in cloud architecture and AI systems.", "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400", "social": { "linkedin": "https://linkedin.com/in/sarahmartinez", "github": "https://github.com/sarahmartinez" } },
+    { "id": "3", "name": "Michael Johnson", "role": "Head of AI/ML", "bio": "Michael is a machine learning expert with a PhD in Computer Science.", "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400", "social": { "linkedin": "https://linkedin.com/in/michaeljohnson", "github": "https://github.com/michaeljohnson" } }
+  ],
+  "testimonials": [
+    { "id": "1", "name": "Sarah Johnson", "role": "VP of Customer Experience", "company": "TechCorp Inc.", "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200", "quote": "PiNodeAI transformed our customer service operations. The AI platform handles most inquiries seamlessly, allowing our team to focus on complex issues.", "rating": 5 },
+    { "id": "2", "name": "Robert Williams", "role": "CTO", "company": "Global Finance Corp", "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200", "quote": "The cloud migration was executed flawlessly with zero downtime. PiNodeAI's expertise in cloud infrastructure is unmatched.", "rating": 5 }
+  ],
+  "blogPosts": [
+    { "id": "1", "title": "The Future of AI in Business: Trends to Watch in 2024", "slug": "future-of-ai-in-business-2024", "excerpt": "Explore the latest AI trends that are reshaping how businesses operate and compete in the digital age.", "content": "Full blog post content here...", "author": { "name": "Michael Johnson", "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200" }, "publishedAt": "2024-01-15", "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800", "category": "AI/ML", "tags": ["AI", "Business", "Technology", "Trends"], "readingTime": 8, "featured": true },
+    { "id": "2", "title": "Cloud Migration Best Practices: A Complete Guide", "slug": "cloud-migration-best-practices", "excerpt": "Learn the essential strategies and best practices for successfully migrating your infrastructure to the cloud.", "content": "Full blog post content here...", "author": { "name": "David Kim", "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200" }, "publishedAt": "2024-01-10", "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800", "category": "Cloud/DevOps", "tags": ["Cloud", "DevOps", "Migration", "AWS"], "readingTime": 12, "featured": true }
+  ],
+  "faqs": [
+    { "id": "1", "question": "What services does PiNodeAI offer?", "answer": "PiNodeAI offers comprehensive digital consulting services including Adobe Experience Manager (AEM) Services, WordPress Services, and Shopify & Shopify Plus Services.", "category": "general" },
+    { "id": "2", "question": "How long does a typical project take?", "answer": "Project timelines vary based on scope and complexity. A typical web application project takes 8-12 weeks, while AI/ML projects can take 12-24 weeks.", "category": "process" },
+    { "id": "3", "question": "What is your pricing model?", "answer": "We offer flexible pricing models including fixed-price projects, time and materials, and retainer agreements. Contact us for a customized quote.", "category": "pricing" }
+  ],
+  "companyStats": [
+    { "label": "Projects Completed", "value": 30, "suffix": "+" },
+    { "label": "Happy Clients", "value": 20, "suffix": "+" },
+    { "label": "Team Members", "value": 30, "suffix": "+" },
+    { "label": "Years of Experience", "value": 3.5, "suffix": "+" }
+  ]
+}

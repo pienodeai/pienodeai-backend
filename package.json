@@ -4,20 +4,12 @@
   "description": "PiNodeAI website backend API",
   "main": "dist/server.js",
   "type": "module",
-  "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "build": "tsc && cp src/data/seed.json dist/data/seed.json",
-    "start": "node dist/server.js",
-    "lint": "eslint src --ext .ts",
-    "typecheck": "tsc --noEmit"
-  },
   "engines": {
     "node": ">=20.0.0"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "cors": "^2.8.5",
-    "swagger-ui-express": "^5.0.0",
     "express": "^4.21.0",
     "helmet": "^7.1.0",
     "mongodb": "^6.10.0",
@@ -28,7 +20,7 @@
   },
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc && cp src/data/seed.json dist/data/seed.json",
+    "build": "tsc",
     "start": "node dist/server.js",
     "seed": "tsx src/scripts/seed.ts",
     "lint": "eslint src --ext .ts",
@@ -37,8 +29,8 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
-    "@types/swagger-ui-express": "^4.1.6",
     "@types/node": "^20.14.0",
+    "@types/swagger-ui-express": "^4.1.6",
     "tsx": "^4.16.0",
     "typescript": "^5.4.0"
   }

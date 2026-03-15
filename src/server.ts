@@ -13,6 +13,18 @@ async function start(): Promise<void> {
     );
   });
 
+  server.on("error", (err: NodeJS.ErrnoException) => {
+    if (err.code === "EADDRINUSE") {
+      logger.error(
+        { port: config.port },
+        `Port ${config.port} is already in use. Kill the other process or set PORT to a different value (e.g. PORT=4001).`
+      );
+    } else {
+      logger.error({ err }, "server_error");
+    }
+    process.exit(1);
+  });
+
   server.timeout = 30000;
   server.keepAliveTimeout = 65000;
   server.headersTimeout = 66000;

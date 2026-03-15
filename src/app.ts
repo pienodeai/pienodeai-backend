@@ -7,7 +7,7 @@ import { getDb } from "./db/connection.js";
 import { requestId } from "./middleware/requestId.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import apiRoutes from "./routes/index.js";
-import swaggerSpec from "./swagger.js";
+import { openApiDocument } from "./openapi.js";
 
 const app = express();
 
@@ -43,10 +43,18 @@ app.get("/health/ready", (_req, res) => {
     .catch(() => res.status(503).json({ status: "unhealthy" }));
 });
 
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec as Parameters<typeof swaggerUi.setup>[0]));
+// Single Swagger UI at /api-docs (one OpenAPI spec, no duplicates)
+app.use(
+  "/api-docs",
+  swaggerUi.serve,
+  swaggerUi.setup(openApiDocument, {
+    explorer: false,
+    customCss: ".swagger-ui .topbar { display: none }",
+  })
+);
 app.get("/api-docs.json", (_req, res) => {
   res.setHeader("Content-Type", "application/json");
-  res.send(swaggerSpec);
+  res.send(openApiDocument);
 });
 
 app.use("/api/v1", apiRoutes);

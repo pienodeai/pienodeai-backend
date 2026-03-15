@@ -16,8 +16,9 @@ export async function submit(req: Request, res: Response): Promise<void> {
   }
 
   const data = result.data;
+  let leadId: string;
   try {
-    await createContactSubmission({
+    leadId = await createContactSubmission({
       name: data.name,
       email: data.email,
       phone: data.phone,
@@ -26,10 +27,10 @@ export async function submit(req: Request, res: Response): Promise<void> {
       createdAt: new Date(),
     });
   } catch (err) {
-    logger.error({ err, requestId: (req as Request & { id?: string }).id }, "contact_submission_failed");
+    logger.error({ err, requestId: (req as Request & { id?: string }).id }, "lead_creation_failed");
     res.status(500).json({
       error: "INTERNAL_ERROR",
-      message: "Failed to save message",
+      message: "Failed to save lead",
       requestId: (req as Request & { id?: string }).id,
     });
     return;
@@ -38,11 +39,12 @@ export async function submit(req: Request, res: Response): Promise<void> {
   logger.info(
     {
       requestId: (req as Request & { id?: string }).id,
+      leadId,
       name: data.name,
       email: data.email,
     },
-    "contact_form_submission"
+    "lead_created"
   );
 
-  res.status(200).json({ message: "Message sent successfully" });
+  res.status(201).json({ message: "Lead created successfully", id: leadId });
 }

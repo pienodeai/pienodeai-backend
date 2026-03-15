@@ -9,8 +9,15 @@ const DB_NAME = "pienodeai";
 
 export async function connect(): Promise<Db> {
   if (db) return db;
-  client = new MongoClient(config.mongodbUri, {
-    serverSelectionTimeoutMS: 10000,
+  const uri = config.mongodbUri.trim();
+  const separator = uri.includes("?") ? "&" : "?";
+  const resolvedUri = uri.includes("retryWrites=true")
+    ? uri
+    : `${uri}${separator}retryWrites=true&w=majority`;
+
+  client = new MongoClient(resolvedUri, {
+    serverSelectionTimeoutMS: 15000,
+    connectTimeoutMS: 15000,
   });
   await client.connect();
   db = client.db(DB_NAME);

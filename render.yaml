@@ -10,5 +10,6 @@ services:
         value: production
       - key: NODE_VERSION
         value: "20"
+    # Run from repo root (leave Root Directory blank in Render Dashboard)
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: node dist/server.js

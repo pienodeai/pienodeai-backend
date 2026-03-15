@@ -1,0 +1,11 @@
+# Render Blueprint - https://docs.render.com/blueprint-spec
+# Ensures TypeScript is compiled before start (dist/server.js must exist).
+services:
+  - type: web
+    name: pienodeai-backend
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
